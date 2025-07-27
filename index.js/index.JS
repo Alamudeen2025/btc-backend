@@ -55,3 +55,8 @@ app.get('/price', (req, res) => {
 app.listen(port, () => {
   console.log(`BTC backend running on http://localhost:${port}`);
 });
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`BTC backend running on port ${port}`);
+});
